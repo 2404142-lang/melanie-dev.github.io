@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Melanie | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melanie | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Melanie</h1>
-        <p>Aspiring Software Developer</p>
-    </header>
+<header class="hero">
+    <h1>Hi, I'm Melanie 👋</h1>
+    <p>Software Developer | PHP | MySQL | Web Systems</p>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="hero-buttons">
+        <a href="#projects">View Projects</a>
+        <a href="#contact" class="secondary">Hire Me</a>
+        <button onclick="toggleDarkMode()" class="dark-btn">Toggle Mode</button>
+    </div>
+</header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a developer passionate about building systems like employee leave management
-            and authentication systems using PHP and MySQL.
-        </p>
-    </section>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="card">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>PHP</p>
-            <p>MySQL</p>
-            <p>Git & GitHub</p>
-        </div>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a software developer focused on building real-world systems like employee
+        leave management, login systems, and database-driven web applications.
+    </p>
+</section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">PHP</div>
+        <div class="card">MySQL</div>
+        <div class="card">Git</div>
+        <div class="card">GitHub</div>
+    </div>
+</section>
 
-        <div class="card">
-            <h3>Employee Leave System</h3>
-            <p>A system to manage employee leave requests.</p>
-        </div>
+<section id="projects">
+    <h2>Projects</h2>
 
-        <div class="card">
-            <h3>Login System</h3>
-            <p>User authentication system using PHP.</p>
-        </div>
+    <div class="project-card">
+        <h3>Employee Leave System</h3>
+        <p>Full system for managing employee leave requests and approvals.</p>
+    </div>
 
-    </section>
+    <div class="project-card">
+        <h3>Login System</h3>
+        <p>Secure authentication system using PHP & MySQL.</p>
+    </div>
 
-    <section id="contact">
-        <h2>Contact 0700252665</h2>
-        <p>Email: 2404142@students.kcau.ac.ke</p>
-    </section>
+</section>
 
-    <footer>
-        <p>© 2026 Melanie</p>
-    </footer>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Melanie</p>
+</footer>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
-    
