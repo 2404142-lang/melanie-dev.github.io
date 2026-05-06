@@ -1,49 +1,75 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f4f4;
+    background: #f4f6f8;
+    scroll-behavior: smooth;
 }
 
 /* Header */
 header {
-    background: #333;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 50px 20px;
 }
 
 /* Navigation */
 nav {
-    background: #555;
-    padding: 10px;
+    background: #222;
+    padding: 15px;
     text-align: center;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #ddd;
+    margin: 0 20px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4facfe;
 }
 
 /* Sections */
 section {
-    padding: 40px;
-    max-width: 800px;
+    padding: 60px 20px;
+    max-width: 900px;
     margin: auto;
 }
 
 /* Cards */
 .card {
     background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #4facfe;
+    color: white;
+    border-radius: 5px;
+}
+
+a:hover {
+    background: #0077ff;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #222;
     color: white;
 }
